@@ -1,0 +1,95 @@
+---
+title: "Data Upload MD1"
+author: "Julie Norman"
+date: '2022-04-11'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Libraries
+
+```{r}
+library(tidyverse)
+library(dplyr)
+library(readxl)
+library(usmap)
+
+library(stringr)
+```
+
+## Data Upload
+
+### 50 Poorest Counties
+
+https://www.census.gov/data/datasets/2013/demo/saipe/2013-state-and-county.html
+
+```{r}
+PoorCounties2013_df <- read_csv("PoorCounties2013.csv")
+
+colsA <- c("State FIPS Code", "County FIPS Code", "Postal Code", "Name")
+
+PoorCounties2013_df <- mutate_at(PoorCounties2013_df, colsA, factor)
+
+PoorCounties2013_df
+```
+
+### Common Causes of Death
+
+```{r}
+COD2013_df <- read_csv("Compressed Mortality, 1999-2016.csv")
+
+COD2013_df <- COD2013_df[ , -which(names(COD2013_df) %in% c("Notes", "Crude Rate"))] #remove empty/ uneeded columns
+
+colsB <- c("State", "State Code", "County", "County Code", "Cause of death", "Cause of death Code")
+
+COD2013_df <- mutate_at(COD2013_df, colsB, factor)
+
+COD2013_df$'Postal Code' <- as.factor(state.abb[match(COD2013_df$State, state.name)])
+
+COD2013_df
+```
+
+### Combine Dataframes
+
+```{r}
+StateCountyFips_df <- read_excel("StateCountyFips.xlsx")
+
+COD2013_df <- COD2013_df %>% fuzzy_inner_join(StateCountyFips_df,  by = c("County" = "Name"), match_fun = str_detect)
+```
+
+```{r}
+combo_df <- merge(PoorCounties2013_df, COD2013_df, by = "County FIPS Code")
+```
+
+
+### Find aggregate
+
+```{r}
+group_sum <- setNames(aggregate(combo_df$Deaths, list(combo_df$`Cause of death`), sum), c("Cause of Death", "Counts"))
+group_sum[order(-group_sum$Counts),]
+```
+
+Top 10 Causes of Death
+
+* Septicaemia, unspecified A41.9
+* Colon, unspecified - Malignant neoplasms C18.9
+* Bronchus or lung, unspecified - Malignant neoplasms C34.9
+* Breast, unspecified - Malignant neoplasms C50.9
+* Hypertensive heart disease without (congestive) heart failure I11
+* Acute myocardial infarction, unspecified I21.9
+* Atherosclerotic cardiovascular disease, so described I25.0
+* Atherosclerotic heart disease I25.1
+* Cardiac arrest, unspecified I46.9
+* Chronic obstructive pulmonary disease, unspecified J44.9
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+---
+title: "MD2"
+author: "Julie Norman"
+date: '2022-04-13'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Libraries
+
+```{r}
+library(tidyverse)
+library(dplyr)
+library(readxl)
+library(lubridate)
+
+library(zoo)
+
+```
+
+## Data Upload
+
+```{r}
+death_df <- read_csv("State Underlying Cause of Death, 1999-2020.csv")
+
+
+
+death_df$`Month Code` <- ym(death_df$`Month Code`) # Convert to Date
+death_df$Month <- format(death_df$`Month Code`, "%M")
+
+
+colsA <- c("State", "State Code")
+death_df <- mutate_at(death_df, colsA, factor) # Convert to factor
+
+death_df <- death_df[ , -which(names(death_df) %in% c("Year Code", "Population", "Crude Rate"))] #remove empty/ unneeded columns
+
+
+str(death_df)
+
+```
+
+### Yearly data
+
+```{r}
+deathMon_df <- death_df %>% filter(is.na(Month) == FALSE)
+deathMon_df2 <- select(deathMon_df, c('Month Code', State, Deaths))
+
+deathYr_df <- death_df %>% filter(Notes == "Total" & is.na(Year) == FALSE)
+
+yq <- as.yearqtr(as.yearmon(paste(deathMon_df$Year, deathMon_df$Month), "%Y %m"))
+ta <- tapply(deathMon_df$Deaths, yq, sum)
+
+# convert to quarterly
+deathQrt_df <- deathMon_df %>%
+  group_by(State) %>% 
+  group_by(State, quarter = paste(quarters(deathMon_df$`Month Code`), lubridate::year(deathMon_df$`Month Code`))) %>%
+  summarise(Deaths = sum(Deaths))
+
+deathQrt_df$quarter <- as.Date(as.yearqtr(deathQrt_df$quarter, format = "Q%q %Y")) # convert quarterly to date
+
+str(deathQrt_df)
+```
+
+## Graphics
+
+```{r}
+ggplot(data = deathYr_df, aes(x = Year, y = Deaths, color = State)) + 
+  geom_vline(xintercept = 2014) +
+  geom_line()
+```
+
+```{r}
+ggplot(data = deathQrt_df, aes(x = quarter, y = Deaths, color = State)) + 
+  geom_line() +
+  geom_vline(xintercept = as.Date("2014-01-01")) 
+
+```
+
+```{r}
+ggplot(data = deathMon_df, aes(x = `Month Code`, y = Deaths, color = State)) + 
+  geom_vline(xintercept = as.numeric(as.Date("2014-01-01"))) +
+  geom_line()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

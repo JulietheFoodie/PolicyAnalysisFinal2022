@@ -1,0 +1,350 @@
+"Notes"	"State"	"State Code"	"Year"	"Year Code"	"Month"	"Month Code"	Deaths	Population	Crude Rate
+	"Arkansas"	"05"	"2009"	"2009"	"Jan., 2009"	"2009/01"	234	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2009"	"2009"	"Feb., 2009"	"2009/02"	230	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2009"	"2009"	"Mar., 2009"	"2009/03"	262	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2009"	"2009"	"Apr., 2009"	"2009/04"	217	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2009"	"2009"	"May, 2009"	"2009/05"	250	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2009"	"2009"	"Jun., 2009"	"2009/06"	195	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2009"	"2009"	"Jul., 2009"	"2009/07"	224	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2009"	"2009"	"Aug., 2009"	"2009/08"	209	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2009"	"2009"	"Sep., 2009"	"2009/09"	236	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2009"	"2009"	"Oct., 2009"	"2009/10"	237	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2009"	"2009"	"Nov., 2009"	"2009/11"	231	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2009"	"2009"	"Dec., 2009"	"2009/12"	258	Not Applicable	Not Applicable
+"Total"	"Arkansas"	"05"	"2009"	"2009"			2783	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2010"	"2010"	"Jan., 2010"	"2010/01"	248	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2010"	"2010"	"Feb., 2010"	"2010/02"	198	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2010"	"2010"	"Mar., 2010"	"2010/03"	259	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2010"	"2010"	"Apr., 2010"	"2010/04"	236	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2010"	"2010"	"May, 2010"	"2010/05"	227	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2010"	"2010"	"Jun., 2010"	"2010/06"	220	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2010"	"2010"	"Jul., 2010"	"2010/07"	223	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2010"	"2010"	"Aug., 2010"	"2010/08"	221	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2010"	"2010"	"Sep., 2010"	"2010/09"	207	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2010"	"2010"	"Oct., 2010"	"2010/10"	233	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2010"	"2010"	"Nov., 2010"	"2010/11"	218	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2010"	"2010"	"Dec., 2010"	"2010/12"	256	Not Applicable	Not Applicable
+"Total"	"Arkansas"	"05"	"2010"	"2010"			2746	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2011"	"2011"	"Jan., 2011"	"2011/01"	228	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2011"	"2011"	"Feb., 2011"	"2011/02"	223	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2011"	"2011"	"Mar., 2011"	"2011/03"	250	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2011"	"2011"	"Apr., 2011"	"2011/04"	220	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2011"	"2011"	"May, 2011"	"2011/05"	255	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2011"	"2011"	"Jun., 2011"	"2011/06"	220	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2011"	"2011"	"Jul., 2011"	"2011/07"	211	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2011"	"2011"	"Aug., 2011"	"2011/08"	247	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2011"	"2011"	"Sep., 2011"	"2011/09"	213	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2011"	"2011"	"Oct., 2011"	"2011/10"	226	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2011"	"2011"	"Nov., 2011"	"2011/11"	234	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2011"	"2011"	"Dec., 2011"	"2011/12"	242	Not Applicable	Not Applicable
+"Total"	"Arkansas"	"05"	"2011"	"2011"			2769	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2012"	"2012"	"Jan., 2012"	"2012/01"	239	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2012"	"2012"	"Feb., 2012"	"2012/02"	250	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2012"	"2012"	"Mar., 2012"	"2012/03"	240	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2012"	"2012"	"Apr., 2012"	"2012/04"	240	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2012"	"2012"	"May, 2012"	"2012/05"	236	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2012"	"2012"	"Jun., 2012"	"2012/06"	227	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2012"	"2012"	"Jul., 2012"	"2012/07"	255	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2012"	"2012"	"Aug., 2012"	"2012/08"	232	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2012"	"2012"	"Sep., 2012"	"2012/09"	254	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2012"	"2012"	"Oct., 2012"	"2012/10"	209	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2012"	"2012"	"Nov., 2012"	"2012/11"	219	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2012"	"2012"	"Dec., 2012"	"2012/12"	257	Not Applicable	Not Applicable
+"Total"	"Arkansas"	"05"	"2012"	"2012"			2858	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2013"	"2013"	"Jan., 2013"	"2013/01"	259	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2013"	"2013"	"Feb., 2013"	"2013/02"	219	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2013"	"2013"	"Mar., 2013"	"2013/03"	259	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2013"	"2013"	"Apr., 2013"	"2013/04"	235	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2013"	"2013"	"May, 2013"	"2013/05"	221	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2013"	"2013"	"Jun., 2013"	"2013/06"	219	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2013"	"2013"	"Jul., 2013"	"2013/07"	216	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2013"	"2013"	"Aug., 2013"	"2013/08"	206	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2013"	"2013"	"Sep., 2013"	"2013/09"	226	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2013"	"2013"	"Oct., 2013"	"2013/10"	250	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2013"	"2013"	"Nov., 2013"	"2013/11"	227	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2013"	"2013"	"Dec., 2013"	"2013/12"	263	Not Applicable	Not Applicable
+"Total"	"Arkansas"	"05"	"2013"	"2013"			2800	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2014"	"2014"	"Jan., 2014"	"2014/01"	261	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2014"	"2014"	"Feb., 2014"	"2014/02"	242	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2014"	"2014"	"Mar., 2014"	"2014/03"	255	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2014"	"2014"	"Apr., 2014"	"2014/04"	225	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2014"	"2014"	"May, 2014"	"2014/05"	232	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2014"	"2014"	"Jun., 2014"	"2014/06"	261	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2014"	"2014"	"Jul., 2014"	"2014/07"	249	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2014"	"2014"	"Aug., 2014"	"2014/08"	259	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2014"	"2014"	"Sep., 2014"	"2014/09"	234	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2014"	"2014"	"Oct., 2014"	"2014/10"	239	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2014"	"2014"	"Nov., 2014"	"2014/11"	261	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2014"	"2014"	"Dec., 2014"	"2014/12"	264	Not Applicable	Not Applicable
+"Total"	"Arkansas"	"05"	"2014"	"2014"			2982	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2015"	"2015"	"Jan., 2015"	"2015/01"	289	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2015"	"2015"	"Feb., 2015"	"2015/02"	242	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2015"	"2015"	"Mar., 2015"	"2015/03"	256	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2015"	"2015"	"Apr., 2015"	"2015/04"	239	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2015"	"2015"	"May, 2015"	"2015/05"	264	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2015"	"2015"	"Jun., 2015"	"2015/06"	233	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2015"	"2015"	"Jul., 2015"	"2015/07"	229	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2015"	"2015"	"Aug., 2015"	"2015/08"	242	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2015"	"2015"	"Sep., 2015"	"2015/09"	236	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2015"	"2015"	"Oct., 2015"	"2015/10"	250	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2015"	"2015"	"Nov., 2015"	"2015/11"	253	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2015"	"2015"	"Dec., 2015"	"2015/12"	252	Not Applicable	Not Applicable
+"Total"	"Arkansas"	"05"	"2015"	"2015"			2985	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2016"	"2016"	"Jan., 2016"	"2016/01"	252	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2016"	"2016"	"Feb., 2016"	"2016/02"	247	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2016"	"2016"	"Mar., 2016"	"2016/03"	254	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2016"	"2016"	"Apr., 2016"	"2016/04"	247	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2016"	"2016"	"May, 2016"	"2016/05"	259	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2016"	"2016"	"Jun., 2016"	"2016/06"	215	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2016"	"2016"	"Jul., 2016"	"2016/07"	223	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2016"	"2016"	"Aug., 2016"	"2016/08"	237	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2016"	"2016"	"Sep., 2016"	"2016/09"	205	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2016"	"2016"	"Oct., 2016"	"2016/10"	242	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2016"	"2016"	"Nov., 2016"	"2016/11"	247	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2016"	"2016"	"Dec., 2016"	"2016/12"	273	Not Applicable	Not Applicable
+"Total"	"Arkansas"	"05"	"2016"	"2016"			2901	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2017"	"2017"	"Jan., 2017"	"2017/01"	245	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2017"	"2017"	"Feb., 2017"	"2017/02"	248	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2017"	"2017"	"Mar., 2017"	"2017/03"	274	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2017"	"2017"	"Apr., 2017"	"2017/04"	251	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2017"	"2017"	"May, 2017"	"2017/05"	280	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2017"	"2017"	"Jun., 2017"	"2017/06"	256	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2017"	"2017"	"Jul., 2017"	"2017/07"	230	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2017"	"2017"	"Aug., 2017"	"2017/08"	245	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2017"	"2017"	"Sep., 2017"	"2017/09"	230	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2017"	"2017"	"Oct., 2017"	"2017/10"	260	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2017"	"2017"	"Nov., 2017"	"2017/11"	230	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2017"	"2017"	"Dec., 2017"	"2017/12"	290	Not Applicable	Not Applicable
+"Total"	"Arkansas"	"05"	"2017"	"2017"			3039	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2018"	"2018"	"Jan., 2018"	"2018/01"	256	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2018"	"2018"	"Feb., 2018"	"2018/02"	240	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2018"	"2018"	"Mar., 2018"	"2018/03"	245	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2018"	"2018"	"Apr., 2018"	"2018/04"	214	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2018"	"2018"	"May, 2018"	"2018/05"	218	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2018"	"2018"	"Jun., 2018"	"2018/06"	243	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2018"	"2018"	"Jul., 2018"	"2018/07"	224	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2018"	"2018"	"Aug., 2018"	"2018/08"	227	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2018"	"2018"	"Sep., 2018"	"2018/09"	232	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2018"	"2018"	"Oct., 2018"	"2018/10"	218	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2018"	"2018"	"Nov., 2018"	"2018/11"	233	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2018"	"2018"	"Dec., 2018"	"2018/12"	277	Not Applicable	Not Applicable
+"Total"	"Arkansas"	"05"	"2018"	"2018"			2827	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2019"	"2019"	"Jan., 2019"	"2019/01"	258	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2019"	"2019"	"Feb., 2019"	"2019/02"	265	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2019"	"2019"	"Mar., 2019"	"2019/03"	283	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2019"	"2019"	"Apr., 2019"	"2019/04"	235	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2019"	"2019"	"May, 2019"	"2019/05"	257	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2019"	"2019"	"Jun., 2019"	"2019/06"	206	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2019"	"2019"	"Jul., 2019"	"2019/07"	261	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2019"	"2019"	"Aug., 2019"	"2019/08"	240	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2019"	"2019"	"Sep., 2019"	"2019/09"	219	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2019"	"2019"	"Oct., 2019"	"2019/10"	221	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2019"	"2019"	"Nov., 2019"	"2019/11"	238	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"2019"	"2019"	"Dec., 2019"	"2019/12"	245	Not Applicable	Not Applicable
+"Total"	"Arkansas"	"05"	"2019"	"2019"			2928	Not Applicable	Not Applicable
+"Total"	"Arkansas"	"05"					31618	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2009"	"2009"	"Jan., 2009"	"2009/01"	239	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2009"	"2009"	"Feb., 2009"	"2009/02"	211	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2009"	"2009"	"Mar., 2009"	"2009/03"	240	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2009"	"2009"	"Apr., 2009"	"2009/04"	239	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2009"	"2009"	"May, 2009"	"2009/05"	230	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2009"	"2009"	"Jun., 2009"	"2009/06"	222	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2009"	"2009"	"Jul., 2009"	"2009/07"	236	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2009"	"2009"	"Aug., 2009"	"2009/08"	216	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2009"	"2009"	"Sep., 2009"	"2009/09"	223	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2009"	"2009"	"Oct., 2009"	"2009/10"	254	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2009"	"2009"	"Nov., 2009"	"2009/11"	243	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2009"	"2009"	"Dec., 2009"	"2009/12"	258	Not Applicable	Not Applicable
+"Total"	"Mississippi"	"28"	"2009"	"2009"			2811	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2010"	"2010"	"Jan., 2010"	"2010/01"	308	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2010"	"2010"	"Feb., 2010"	"2010/02"	243	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2010"	"2010"	"Mar., 2010"	"2010/03"	254	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2010"	"2010"	"Apr., 2010"	"2010/04"	238	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2010"	"2010"	"May, 2010"	"2010/05"	259	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2010"	"2010"	"Jun., 2010"	"2010/06"	231	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2010"	"2010"	"Jul., 2010"	"2010/07"	218	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2010"	"2010"	"Aug., 2010"	"2010/08"	250	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2010"	"2010"	"Sep., 2010"	"2010/09"	234	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2010"	"2010"	"Oct., 2010"	"2010/10"	238	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2010"	"2010"	"Nov., 2010"	"2010/11"	238	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2010"	"2010"	"Dec., 2010"	"2010/12"	226	Not Applicable	Not Applicable
+"Total"	"Mississippi"	"28"	"2010"	"2010"			2937	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2011"	"2011"	"Jan., 2011"	"2011/01"	286	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2011"	"2011"	"Feb., 2011"	"2011/02"	268	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2011"	"2011"	"Mar., 2011"	"2011/03"	255	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2011"	"2011"	"Apr., 2011"	"2011/04"	242	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2011"	"2011"	"May, 2011"	"2011/05"	251	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2011"	"2011"	"Jun., 2011"	"2011/06"	232	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2011"	"2011"	"Jul., 2011"	"2011/07"	223	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2011"	"2011"	"Aug., 2011"	"2011/08"	245	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2011"	"2011"	"Sep., 2011"	"2011/09"	216	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2011"	"2011"	"Oct., 2011"	"2011/10"	227	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2011"	"2011"	"Nov., 2011"	"2011/11"	236	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2011"	"2011"	"Dec., 2011"	"2011/12"	249	Not Applicable	Not Applicable
+"Total"	"Mississippi"	"28"	"2011"	"2011"			2930	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2012"	"2012"	"Jan., 2012"	"2012/01"	251	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2012"	"2012"	"Feb., 2012"	"2012/02"	227	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2012"	"2012"	"Mar., 2012"	"2012/03"	247	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2012"	"2012"	"Apr., 2012"	"2012/04"	223	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2012"	"2012"	"May, 2012"	"2012/05"	237	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2012"	"2012"	"Jun., 2012"	"2012/06"	237	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2012"	"2012"	"Jul., 2012"	"2012/07"	263	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2012"	"2012"	"Aug., 2012"	"2012/08"	239	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2012"	"2012"	"Sep., 2012"	"2012/09"	231	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2012"	"2012"	"Oct., 2012"	"2012/10"	236	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2012"	"2012"	"Nov., 2012"	"2012/11"	271	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2012"	"2012"	"Dec., 2012"	"2012/12"	244	Not Applicable	Not Applicable
+"Total"	"Mississippi"	"28"	"2012"	"2012"			2906	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2013"	"2013"	"Jan., 2013"	"2013/01"	278	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2013"	"2013"	"Feb., 2013"	"2013/02"	271	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2013"	"2013"	"Mar., 2013"	"2013/03"	263	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2013"	"2013"	"Apr., 2013"	"2013/04"	255	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2013"	"2013"	"May, 2013"	"2013/05"	234	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2013"	"2013"	"Jun., 2013"	"2013/06"	228	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2013"	"2013"	"Jul., 2013"	"2013/07"	236	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2013"	"2013"	"Aug., 2013"	"2013/08"	246	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2013"	"2013"	"Sep., 2013"	"2013/09"	224	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2013"	"2013"	"Oct., 2013"	"2013/10"	237	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2013"	"2013"	"Nov., 2013"	"2013/11"	274	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2013"	"2013"	"Dec., 2013"	"2013/12"	283	Not Applicable	Not Applicable
+"Total"	"Mississippi"	"28"	"2013"	"2013"			3029	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2014"	"2014"	"Jan., 2014"	"2014/01"	274	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2014"	"2014"	"Feb., 2014"	"2014/02"	251	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2014"	"2014"	"Mar., 2014"	"2014/03"	278	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2014"	"2014"	"Apr., 2014"	"2014/04"	237	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2014"	"2014"	"May, 2014"	"2014/05"	295	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2014"	"2014"	"Jun., 2014"	"2014/06"	237	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2014"	"2014"	"Jul., 2014"	"2014/07"	265	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2014"	"2014"	"Aug., 2014"	"2014/08"	246	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2014"	"2014"	"Sep., 2014"	"2014/09"	253	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2014"	"2014"	"Oct., 2014"	"2014/10"	261	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2014"	"2014"	"Nov., 2014"	"2014/11"	284	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2014"	"2014"	"Dec., 2014"	"2014/12"	264	Not Applicable	Not Applicable
+"Total"	"Mississippi"	"28"	"2014"	"2014"			3145	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2015"	"2015"	"Jan., 2015"	"2015/01"	267	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2015"	"2015"	"Feb., 2015"	"2015/02"	252	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2015"	"2015"	"Mar., 2015"	"2015/03"	270	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2015"	"2015"	"Apr., 2015"	"2015/04"	277	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2015"	"2015"	"May, 2015"	"2015/05"	264	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2015"	"2015"	"Jun., 2015"	"2015/06"	247	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2015"	"2015"	"Jul., 2015"	"2015/07"	228	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2015"	"2015"	"Aug., 2015"	"2015/08"	224	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2015"	"2015"	"Sep., 2015"	"2015/09"	227	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2015"	"2015"	"Oct., 2015"	"2015/10"	230	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2015"	"2015"	"Nov., 2015"	"2015/11"	231	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2015"	"2015"	"Dec., 2015"	"2015/12"	267	Not Applicable	Not Applicable
+"Total"	"Mississippi"	"28"	"2015"	"2015"			2984	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2016"	"2016"	"Jan., 2016"	"2016/01"	248	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2016"	"2016"	"Feb., 2016"	"2016/02"	254	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2016"	"2016"	"Mar., 2016"	"2016/03"	254	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2016"	"2016"	"Apr., 2016"	"2016/04"	235	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2016"	"2016"	"May, 2016"	"2016/05"	258	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2016"	"2016"	"Jun., 2016"	"2016/06"	242	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2016"	"2016"	"Jul., 2016"	"2016/07"	242	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2016"	"2016"	"Aug., 2016"	"2016/08"	260	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2016"	"2016"	"Sep., 2016"	"2016/09"	255	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2016"	"2016"	"Oct., 2016"	"2016/10"	227	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2016"	"2016"	"Nov., 2016"	"2016/11"	228	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2016"	"2016"	"Dec., 2016"	"2016/12"	277	Not Applicable	Not Applicable
+"Total"	"Mississippi"	"28"	"2016"	"2016"			2980	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2017"	"2017"	"Jan., 2017"	"2017/01"	263	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2017"	"2017"	"Feb., 2017"	"2017/02"	213	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2017"	"2017"	"Mar., 2017"	"2017/03"	253	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2017"	"2017"	"Apr., 2017"	"2017/04"	232	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2017"	"2017"	"May, 2017"	"2017/05"	257	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2017"	"2017"	"Jun., 2017"	"2017/06"	228	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2017"	"2017"	"Jul., 2017"	"2017/07"	246	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2017"	"2017"	"Aug., 2017"	"2017/08"	236	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2017"	"2017"	"Sep., 2017"	"2017/09"	221	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2017"	"2017"	"Oct., 2017"	"2017/10"	227	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2017"	"2017"	"Nov., 2017"	"2017/11"	245	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2017"	"2017"	"Dec., 2017"	"2017/12"	291	Not Applicable	Not Applicable
+"Total"	"Mississippi"	"28"	"2017"	"2017"			2912	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2018"	"2018"	"Jan., 2018"	"2018/01"	280	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2018"	"2018"	"Feb., 2018"	"2018/02"	222	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2018"	"2018"	"Mar., 2018"	"2018/03"	245	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2018"	"2018"	"Apr., 2018"	"2018/04"	216	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2018"	"2018"	"May, 2018"	"2018/05"	216	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2018"	"2018"	"Jun., 2018"	"2018/06"	231	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2018"	"2018"	"Jul., 2018"	"2018/07"	212	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2018"	"2018"	"Aug., 2018"	"2018/08"	236	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2018"	"2018"	"Sep., 2018"	"2018/09"	215	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2018"	"2018"	"Oct., 2018"	"2018/10"	252	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2018"	"2018"	"Nov., 2018"	"2018/11"	240	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2018"	"2018"	"Dec., 2018"	"2018/12"	225	Not Applicable	Not Applicable
+"Total"	"Mississippi"	"28"	"2018"	"2018"			2790	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2019"	"2019"	"Jan., 2019"	"2019/01"	264	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2019"	"2019"	"Feb., 2019"	"2019/02"	239	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2019"	"2019"	"Mar., 2019"	"2019/03"	243	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2019"	"2019"	"Apr., 2019"	"2019/04"	229	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2019"	"2019"	"May, 2019"	"2019/05"	270	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2019"	"2019"	"Jun., 2019"	"2019/06"	213	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2019"	"2019"	"Jul., 2019"	"2019/07"	258	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2019"	"2019"	"Aug., 2019"	"2019/08"	231	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2019"	"2019"	"Sep., 2019"	"2019/09"	243	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2019"	"2019"	"Oct., 2019"	"2019/10"	222	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2019"	"2019"	"Nov., 2019"	"2019/11"	219	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"2019"	"2019"	"Dec., 2019"	"2019/12"	247	Not Applicable	Not Applicable
+"Total"	"Mississippi"	"28"	"2019"	"2019"			2878	Not Applicable	Not Applicable
+"Total"	"Mississippi"	"28"					32302	Not Applicable	Not Applicable
+"Total"							63920	Not Applicable	Not Applicable
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"ICD-10 Codes: A41.0 (Septicaemia due to Staphylococcus aureus); A41.1 (Septicaemia due to other specified staphylococcus); A41.2"
+"(Septicaemia due to unspecified staphylococcus); A41.3 (Septicaemia due to Haemophilus influenzae); A41.4 (Septicaemia due to"
+"anaerobes); A41.5 (Septicaemia due to other Gram-negative organisms); A41.8 (Other specified septicaemia); A41.9 (Septicaemia,"
+"unspecified); C18.0 (Caecum - Malignant neoplasms); C18.1 (Appendix - Malignant neoplasms); C18.2 (Ascending colon - Malignant"
+"neoplasms); C18.3 (Hepatic flexure - Malignant neoplasms); C18.4 (Transverse colon - Malignant neoplasms); C18.5 (Splenic"
+"flexure - Malignant neoplasms); C18.6 (Descending colon - Malignant neoplasms); C18.7 (Sigmoid colon - Malignant neoplasms);"
+"C18.8 (Overlapping lesion of colon - Malignant neoplasms); C18.9 (Colon, unspecified - Malignant neoplasms); C34.0 (Main"
+"bronchus - Malignant neoplasms); C34.1 (Upper lobe, bronchus or lung - Malignant neoplasms); C34.2 (Middle lobe, bronchus or"
+"lung - Malignant neoplasms); C34.3 (Lower lobe, bronchus or lung - Malignant neoplasms); C34.8 (Overlapping lesion of bronchus"
+"and lung - Malignant neoplasms); C34.9 (Bronchus or lung, unspecified - Malignant neoplasms); C50.0 (Nipple and areola -"
+"Malignant neoplasms); C50.1 (Central portion of breast - Malignant neoplasms); C50.2 (Upper-inner quadrant of breast - Malignant"
+"neoplasms); C50.3 (Lower-inner quadrant of breast - Malignant neoplasms); C50.4 (Upper-outer quadrant of breast - Malignant"
+"neoplasms); C50.5 (Lower-outer quadrant of breast - Malignant neoplasms); C50.6 (Axillary tail of breast - Malignant neoplasms);"
+"C50.8 (Overlapping lesion of breast - Malignant neoplasms); C50.9 (Breast, unspecified - Malignant neoplasms); I11.0"
+"(Hypertensive heart disease with (congestive) heart failure); I11.9 (Hypertensive heart disease without (congestive) heart"
+"failure); I21.0 (Acute transmural myocardial infarction of anterior wall); I21.1 (Acute transmural myocardial infarction of"
+"inferior wall); I21.2 (Acute transmural myocardial infarction of other sites); I21.3 (Acute transmural myocardial infarction of"
+"unspecified site); I21.4 (Acute subendocardial myocardial infarction); I21.9 (Acute myocardial infarction, unspecified); I25.0"
+"(Atherosclerotic cardiovascular disease, so described); I25.1 (Atherosclerotic heart disease); I25.2 (Old myocardial"
+"infarction); I25.3 (Aneurysm of heart); I25.4 (Coronary artery aneurysm); I25.5 (Ischaemic cardiomyopathy); I25.6 (Silent"
+"myocardial ischaemia); I25.8 (Other forms of chronic ischaemic heart disease); I25.9 (Chronic ischaemic heart disease,"
+"unspecified); I46.0 (Cardiac arrest with successful resuscitation); I46.1 (Sudden cardiac death, so described); I46.9 (Cardiac"
+"arrest, unspecified); J44.0 (Chronic obstructive pulmonary disease with acute lower respiratory infection); J44.1 (Chronic"
+"obstructive pulmonary disease with acute exacerbation, unspecified); J44.8 (Other specified chronic obstructive pulmonary"
+"disease); J44.9 (Chronic obstructive pulmonary disease, unspecified)"
+"Single-Year Ages: 18 years; 19 years; 20 years; 21 years; 22 years; 23 years; 24 years; 25 years; 26 years; 27 years; 28 years;"
+"29 years; 30 years; 31 years; 32 years; 33 years; 34 years; 35 years; 36 years; 37 years; 38 years; 39 years; 40 years; 41"
+"years; 42 years; 43 years; 44 years; 45 years; 46 years; 47 years; 48 years; 49 years; 50 years; 51 years; 52 years; 53 years;"
+"54 years; 55 years; 56 years; 57 years; 58 years; 59 years; 60 years; 61 years; 62 years; 63 years; 64 years"
+"States: Arkansas (05); Mississippi (28)"
+"Year/Month: 2009; 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017; 2018; 2019"
+"Group By: State; Year; Month"
+"Show Totals: True"
+"Show Zero Values: True"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Apr 12, 2022 9:02:34 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files, 1999-2020, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Apr 12, 2022 9:02:34 PM"
+"---"
+Caveats:
+"1. Population and rates are labeled 'Not Applicable' when Autopsy, Place of Death, Weekday or Month are grouped by or limited,"
+"due to lack of a valid population. More information: http://wonder.cdc.gov/wonder/help/ucd.html#NotApplicableRates."
+"2. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"3. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,"
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"4. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#ICD-10 Changes."
