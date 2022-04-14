@@ -1,0 +1,72 @@
+---
+title: "Rich Counties"
+author: "Julie Norman"
+date: '2022-04-11'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Libraries
+
+```{r}
+library(tidyverse)
+library(dplyr)
+library(readxl)
+
+```
+
+## Data Upload
+
+### 50 Richest Counties
+
+https://www.census.gov/data/datasets/2013/demo/saipe/2013-state-and-county.html
+
+```{r}
+RichCounties2013_df <- read_csv("RichCounties2013_pov.csv")
+
+colsA <- c("State FIPS Code", "County FIPS Code", "Postal Code", "Name")
+
+RichCounties2013_df <- mutate_at(RichCounties2013_df, colsA, factor) # character to factor
+
+RichCounties2013_df
+```
+
+### Common Causes of Death
+
+```{r}
+COD2013_df <- read_csv("Compressed Mortality, 1999-2016.csv")
+
+COD2013_df <- COD2013_df[ , -which(names(COD2013_df) %in% c("Notes", "Crude Rate"))] #remove empty/ unneeded columns
+
+colsB <- c("State", "State Code", "County", "County Code", "Cause of death", "Cause of death Code")
+
+COD2013_df <- mutate_at(COD2013_df, colsB, factor) # character to factor
+
+COD2013_df$'Postal Code' <- as.factor(state.abb[match(COD2013_df$State, state.name)]) # add state abriev
+
+COD2013_df
+```
+
+
+### Combine Dataframes
+
+```{r}
+StateCountyFips_df <- read_excel("StateCountyFips.xlsx")
+
+COD2013_df <- COD2013_df %>% fuzzy_inner_join(StateCountyFips_df,  by = c("County" = "Name"), match_fun = str_detect)
+```
+
+```{r}
+combo_df <- merge(RichCounties2013_df, COD2013_df, by = "County FIPS Code")
+```
+
+
+### Find aggregate
+
+```{r}
+group_sum <- setNames(aggregate(combo_df$Deaths, list(combo_df$`Cause of death`), sum), c("Cause of Death", "Counts"))
+group_sum[order(-group_sum$Counts),] # reorder
+```

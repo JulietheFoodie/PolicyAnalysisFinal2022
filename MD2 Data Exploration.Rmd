@@ -16,9 +16,11 @@ library(tidyverse)
 library(dplyr)
 library(readxl)
 library(lubridate)
-
 library(zoo)
 
+library(seasonal)
+library(stargazer)
+library(mosaic)
 ```
 
 ## Data Upload
@@ -30,6 +32,9 @@ death_df <- read_csv("State Underlying Cause of Death, 1999-2020.csv")
 
 death_df$`Month Code` <- ym(death_df$`Month Code`) # Convert to Date
 death_df$Month <- format(death_df$`Month Code`, "%M")
+death_df$Time <- ifelse(death_df$Year >= 2014, 1, 0) #before/after
+death_df$Treat <- ifelse(death_df$State == "Arkansas" , 1, 0)
+death_df$did <- death_df$Time * death_df$Treat
 
 
 colsA <- c("State", "State Code")
@@ -39,6 +44,21 @@ death_df <- death_df[ , -which(names(death_df) %in% c("Year Code", "Population",
 
 
 str(death_df)
+
+```
+
+### Add Unemployment 
+
+```{r}
+UnMS_df <- read_csv("MSUR.csv") %>% 
+  rename(UnemployRT = MSUR)
+
+UnAK_df <- read_csv("ARUR.csv") %>% 
+  rename(UnemployRT = ARUR)
+
+Unem_df <- rbind(UnMS_df, UnAK_df)
+
+
 
 ```
 
@@ -60,6 +80,10 @@ deathQrt_df <- deathMon_df %>%
   summarise(Deaths = sum(Deaths))
 
 deathQrt_df$quarter <- as.Date(as.yearqtr(deathQrt_df$quarter, format = "Q%q %Y")) # convert quarterly to date
+
+deathQrt_df$Time <- ifelse(deathQrt_df$quarter >= "2014-01-01", 1, 0) #before/after
+deathQrt_df$Treat <- ifelse(deathQrt_df$State == "Mississippi" , 0, 1)
+deathQrt_df$did <- deathQrt_df$Time * deathQrt_df$Treat
 
 str(deathQrt_df)
 ```
@@ -86,14 +110,183 @@ ggplot(data = deathMon_df, aes(x = `Month Code`, y = Deaths, color = State)) +
 ```
 
 
+## Time Series Tests
+
+```{r}
+acf(deathMon_df$Deaths)
+```
+```{r}
+pacf(deathMon_df$Deaths)
+```
+### Seasonally Adjust MS
+
+```{r}
+deathMS_df <- filter(deathMon_df, State == "Mississippi")
+
+deathMS_ts <- ts(deathMS_df$Deaths, frequency = 12, start = c(2009, 1))
+deathCompMS_ts <- decompose(deathMS_ts)
+plot(deathCompMS_ts)
+```
+
+```{r}
+adjustMS <- deathCompMS_ts$x - deathCompMS_ts$seasonal
+
+DeathSeasMS <- data.frame(Seas_Death=as.matrix(adjustMS), date=time(adjustMS))
+
+DeathSeasMS$date <- zoo::as.Date(time(DeathSeasMS$date))
+
+DeathSeasMS
+
+deathMS_df2 <- inner_join(DeathSeasMS, deathMS_df, by = c(date = 'Month Code')) %>% 
+  inner_join(UnMS_df, by = c(date = "DATE"))
+```
+
+
+### Seasonally Adjust Arkansas
+
+```{r}
+deathAK_df <- filter(deathMon_df, State == "Arkansas")
+
+deathAK_ts <- ts(deathAK_df$Deaths, frequency = 12, start = c(2009, 1))
+deathCompAK_ts <- decompose(deathAK_ts)
+plot(deathCompAK_ts)
+```
+
+```{r}
+adjustAK <- deathCompAK_ts$x - deathCompAK_ts$seasonal
+
+DeathSeasAK <- data.frame(Seas_Death=as.matrix(adjustAK), date=time(adjustAK))
+
+DeathSeasAK$date <- zoo::as.Date(time(DeathSeasAK$date))
+
+DeathSeasAK
+
+deathAK_df2 <- inner_join(DeathSeasAK, deathAK_df, by = c(date = 'Month Code')) %>% 
+  inner_join(UnAK_df, by = c(date = "DATE"))
+
+
+```
+
+```{r}
+deathMon_df2 <- rbind(deathAK_df2, deathMS_df2)
+
+deathMon_df2$date.c <- as.character(deathMon_df2$date)
+
+str(deathMon_df2)
+```
+
+
+```{r}
+death_ts <- ts(deathMon_df$Deaths, frequency = 12, start = c(2009, 1))
+deathComp_ts <- decompose(death_ts)
+plot(deathComp_ts)
+
+```
+
+```{r}
+plot(seas(death_ts))
+
+
+```
+
+```{r}
+# adjust <- deathComp_ts$x - deathComp_ts$seasonal
+# 
+# DeathSeas <- data.frame(Seas_Death=as.matrix(adjust), date=time(adjust))
+# 
+# DeathSeas$date <- zoo::as.Date(time(DeathSeas$date))
+# 
+# 
+# deathMon_df2 <- inner_join(DeathSeas, deathMon_df, by = c(date = 'Month Code'))
+# 
+# 
+# 
+# str(deathMon_df2 )
+```
 
 
 
+```{r}
+# cols <- c("DATE.c", "DATE.x", "UnemployRT.x", "DATE.c.y", "DATE.y", "UnemployRT.y", "DATE.c.y.y")
+# 
+# deathMon_df3 <- deathMon_df2[ , -which(names(deathMon_df2) %in% c("DATE.c", "DATE.x", "UnemployRT.x", "DATE.c.y", "DATE.y", "UnemployRT.y", "DATE.c.y.y"))] #remove empty/ unneeded columns
 
 
 
+write.csv(deathMon_df2, "SeasonallyAdjustedDeath.csv")
+```
+
+```{r}
+
+
+fav_stats(deathMon_df2$UnemployRT)
+```
+```{r}
+ggplot(data = deathMon_df2, aes(x = date, y = UnemployRT, color = State)) + 
+  geom_vline(xintercept = as.numeric(as.Date("2014-01-01"))) +
+  geom_line()
+```
+```{r}
+ggplot(data = deathQrt_df, aes(x = quarter, y = Deaths, color = State)) + 
+  geom_line() +
+  geom_vline(xintercept = as.Date("2014-01-01")) 
+
+```
+
+## Analysis
+
+```{r}
+did_lm <- lm(Seas_Death ~ Treat*Time + UnemployRT, data = deathMon_df2)
+summary(did_lm)
+
+```
+
+```{r}
+ggplot(data = deathMon_df2, aes(x = date, y = Seas_Death, color = State)) + 
+  geom_vline(xintercept = as.numeric(as.Date("2014-01-01"))) +
+  geom_line()
+```
+
+```{r}
+did_lm <- lm(Deaths ~ Treat*Time + UnemployRT, data = deathMon_df2)
+summary(did_lm)
+```
 
 
 
+## Seasonally adjust Quarterly
 
+```{r}
+# convert to quarterly
+deathQrt_df2 <- deathMon_df2 %>%
+#  group_by(State) %>% 
+  group_by(State, quarter = paste(quarters(deathMon_df2$date), 
+                                  lubridate::year(deathMon_df2$date))) %>%
+  summarise(Deaths = sum(Deaths), Seas_Death = sum(Seas_Death), UnemployRT = mean(UnemployRT))
+
+deathQrt_df2$quarter <- as.Date(as.yearqtr(deathQrt_df2$quarter, format = "Q%q %Y")) # convert quarterly to date
+
+deathQrt_df2$Time <- ifelse(deathQrt_df2$quarter >= "2014-01-01", 1, 0) #before/after
+deathQrt_df2$Treat <- ifelse(deathQrt_df2$State == "Mississippi" , 0, 1)
+deathQrt_df2$did <- deathQrt_df2$Time * deathQrt_df2$Treat
+```
+
+```{r}
+did_lm = lm(Deaths ~ Treat*Time + UnemployRT, data = deathQrt_df2)
+summary(did_lm)
+```
+
+```{r}
+ggplot(data = deathQrt_df2, aes(x = quarter, y = UnemployRT, color = State)) + 
+  geom_line() +
+  geom_vline(xintercept = as.Date("2014-01-01")) 
+
+```
+
+```{r}
+ggplot(data = deathQrt_df2, aes(x = quarter, y = Deaths, color = State)) + 
+  geom_line() +
+  geom_vline(xintercept = as.Date("2014-01-01")) 
+
+```
 

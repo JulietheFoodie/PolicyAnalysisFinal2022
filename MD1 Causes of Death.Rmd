@@ -15,9 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(dplyr)
 library(readxl)
-library(usmap)
 
-library(stringr)
 ```
 
 ## Data Upload
@@ -27,11 +25,11 @@ library(stringr)
 https://www.census.gov/data/datasets/2013/demo/saipe/2013-state-and-county.html
 
 ```{r}
-PoorCounties2013_df <- read_csv("PoorCounties2013.csv")
+PoorCounties2013_df <- read_csv("PoorCounties2013_Pvrt.csv")
 
 colsA <- c("State FIPS Code", "County FIPS Code", "Postal Code", "Name")
 
-PoorCounties2013_df <- mutate_at(PoorCounties2013_df, colsA, factor)
+PoorCounties2013_df <- mutate_at(PoorCounties2013_df, colsA, factor) # character to factor
 
 PoorCounties2013_df
 ```
@@ -41,16 +39,17 @@ PoorCounties2013_df
 ```{r}
 COD2013_df <- read_csv("Compressed Mortality, 1999-2016.csv")
 
-COD2013_df <- COD2013_df[ , -which(names(COD2013_df) %in% c("Notes", "Crude Rate"))] #remove empty/ uneeded columns
+COD2013_df <- COD2013_df[ , -which(names(COD2013_df) %in% c("Notes", "Crude Rate"))] #remove empty/ unneeded columns
 
 colsB <- c("State", "State Code", "County", "County Code", "Cause of death", "Cause of death Code")
 
-COD2013_df <- mutate_at(COD2013_df, colsB, factor)
+COD2013_df <- mutate_at(COD2013_df, colsB, factor) # character to factor
 
-COD2013_df$'Postal Code' <- as.factor(state.abb[match(COD2013_df$State, state.name)])
+COD2013_df$'Postal Code' <- as.factor(state.abb[match(COD2013_df$State, state.name)]) # add state abriev
 
 COD2013_df
 ```
+
 
 ### Combine Dataframes
 
@@ -69,8 +68,19 @@ combo_df <- merge(PoorCounties2013_df, COD2013_df, by = "County FIPS Code")
 
 ```{r}
 group_sum <- setNames(aggregate(combo_df$Deaths, list(combo_df$`Cause of death`), sum), c("Cause of Death", "Counts"))
-group_sum[order(-group_sum$Counts),]
+group_sum[order(-group_sum$Counts),] # reorder
 ```
+
+* Bronchus or lung, unspecified - Malignant neoplasms C34.9
+* Acute myocardial infarction, unspecified I21.9
+* Atherosclerotic cardiovascular disease, so described I25.0
+* Chronic obstructive pulmonary disease, unspecified J44.9
+* Atherosclerotic heart disease I25.1
+* Hypertensive heart disease without (congestive) heart failure I11
+* Breast, unspecified - Malignant neoplasms C50.9
+* Cardiac arrest, unspecified I46.9
+
+
 
 Top 10 Causes of Death
 
@@ -86,6 +96,12 @@ Top 10 Causes of Death
 * Chronic obstructive pulmonary disease, unspecified J44.9
 
 
+```{r}
+group_sum10 <- group_sum[1:10,]
+
+sum(group_sum10$Counts) /sum(group_sum$Counts)
+
+```
 
 
 
