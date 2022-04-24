@@ -104,6 +104,41 @@ sum(group_sum10$Counts) /sum(group_sum$Counts)
 ```
 
 
+## Black popultaion 
+
+U.S. Census Bureau, 2010 American Community Survey
+Source: U.S. Census Bureau, 2011 American Community Survey
+Source: U.S. Census Bureau, 2012 American Community Survey
+Source: U.S. Census Bureau, 2013 American Community Survey
+Source: U.S. Census Bureau, 2014 American Community Survey
+
+Source: U.S. Census Bureau, 2011-2015 American Community Survey 5-Year Estimates
+
+U.S. Census Bureau, 2016 American Community Survey 1-Year Estimates
+Source: U.S. Census Bureau, 2017 American Community Survey 1-Year Estimates
+
+```{r}
+year <- c("2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019")
+black_pop <- c(464411, 463364, 462182, 463928, 468231, 459748, 464516,  458367, 456714, 467468, 1109263, 1115359, 1123620, 1128280, 1132556, 1116457, 1134958, 1134333, 1135599, 1130608)
+state <- c( "AK", "AK", "AK", "AK", "AK", "AK", "AK", "AK", "AK", "AK", "MS", "MS", "MS", "MS", "MS", "MS", "MS", "MS", "MS", "MS")
+
+year2 <- c("2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", )
+BlackAK <- c(464411, 463364, 462182, 463928, 468231, 459748, 464516,  458367, 456714, 467468)
+BlackMS <- c(1109263, 1115359, 1123620, 1128280, 1132556, 1116457, 1134958, 1134333, 1135599, 1130608)
+
+lst <- list(year = year,
+             black_pop = black_pop,
+             state = state)
+
+black_df <- as.data.frame(lst)
+black_df$year <- as.numeric(black_df$)
+
+ggplot(black_df, aes(x = year, y = black_pop, fill = state)) + 
+  geom_line() 
+
+
+
+```
 
 
 
