@@ -21,6 +21,7 @@ library(zoo)
 library(seasonal)
 library(stargazer)
 library(mosaic)
+library(vtable)
 ```
 
 ## Data Upload
@@ -272,7 +273,7 @@ deathMon_df2 <- rbind(SeasAK_df, SeasMS_df ) %>%
 
 
 deathMon_df2$date.c <- as.character(deathMon_df2$date)
-#deathMon_df2 <- rename(deathMon_df2, State = State.x)
+deathMon_df2 <- rename(deathMon_df2, State = State.x)
 
 
 ```
@@ -286,7 +287,7 @@ deathMon_df2$date.c <- as.character(deathMon_df2$date)
 ```
 
 ```{r}
-plot(seas(death_ts))
+#plot(seas(death_ts))
 
 
 ```
@@ -330,6 +331,17 @@ str(deathMon_df2)
 ## Controls Graphics
 
 ```{r}
+var_df <- select(deathMon_df2, c("Seas_Death", "UnemployRT", "Seas_SnpProp", ))
+st(var_df)
+```
+
+```{r}
+stargazer(var_df, type = "html", out = "SumStats.html", nobs = FALSE, mean.sd = TRUE, median = TRUE,
+          iqr = TRUE, title = "Summary Statistics")
+```
+
+
+```{r}
 ggplot(data = deathMon_df2, aes(x = date, y = UnemployRT, color = State)) + 
   geom_vline(xintercept = as.numeric(as.Date("2014-01-01"))) +
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
@@ -341,14 +353,18 @@ ggplot(data = deathMon_df2, aes(x = date, y = UnemployRT, color = State)) +
 ```
 
 ```{r}
-ggplot(data = deathMon_df2, aes(x = date, y = Seas_SnpProp*100, color = State.x)) + 
+ggplot(data = deathMon_df2, aes(x = date, y = Seas_SnpProp*100, color = State)) + 
   geom_vline(xintercept = as.numeric(as.Date("2014-01-01"))) +
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
-   labs(title = "Seasonally Adjusted Snap Usage over Time",
+   labs(title = "Seasonally Adjusted SNAP Usage over Time",
               subtitle = "Arkansas vs Mississippi",
               caption = "Source: U.S. Census Bureau via fred.stlouisfed.org") +
   xlab("") + ylab("Percent") +
   geom_line()
+```
+```{r}
+summary(lm(UnemployRT ~ Seas_SnpProp, deathMon_df2))
+cor(deathMon_df2$UnemployRT, deathMon_df2$Seas_SnpProp)
 ```
 
 
@@ -387,18 +403,23 @@ summary(Sdid_lm4)
 ```
 
 ```{r}
-ggplot(data = deathMon_df2, aes(x = date, y = Seas_Death, color = State.x)) + 
+
+
+ggplot(data = deathMon_df2, aes(x = date, y = Seas_Death, color = State)) + 
   geom_vline(xintercept = as.numeric(as.Date("2014-01-01"))) +
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
-  ggtitle("Seasonally Adjusted Deaths by Month") + 
-  ylab("Deaths") + xlab("Date") +
+  labs(title = "Seasonally Adjusted Deaths by Month", subtitle = "Arkansas vs Mississippi") + 
+  ylab("Deaths Count") + xlab("Year") +
   geom_line()
 ```
+
 
 ```{r}
 did_lm <- lm(Deaths ~ Treat*Time + UnemployRT + Seas_SnpProp, data = deathMon_df2)
 summary(did_lm)
 ```
+
+
 
 ```{r}
 
@@ -407,6 +428,8 @@ stargazer(Sdid_lm, Sdid_lm2, Sdid_lm4, Sdid_lm3, did_lm, type = "text")
 
 
 ```
+
+
 
 
 ## Seasonally adjust Quarterly
@@ -430,15 +453,15 @@ str(deathQrt_df)
 ```{r}
 # convert to quarterly
 deathQrt_df2 <- deathMon_df2 %>%
-  group_by(State.x) %>% 
-  group_by(State.x, quarter = paste(quarters(deathMon_df2$date), 
+  group_by(State) %>% 
+  group_by(State, quarter = paste(quarters(deathMon_df2$date), 
                                   lubridate::year(deathMon_df2$date))) %>%
   summarise(Deaths = sum(Deaths), Seas_Death = sum(Seas_Death), UnemployRT = mean(UnemployRT))
 
 deathQrt_df2$quarter <- as.Date(as.yearqtr(deathQrt_df2$quarter, format = "Q%q %Y")) # convert quarterly to date
 
 deathQrt_df2$Time <- ifelse(deathQrt_df2$quarter >= "2014-01-01", 1, 0) #before/after
-deathQrt_df2$Treat <- ifelse(deathQrt_df2$State.x == "Mississippi" , 0, 1)
+deathQrt_df2$Treat <- ifelse(deathQrt_df2$State== "Mississippi" , 0, 1)
 deathQrt_df2$did <- deathQrt_df2$Time * deathQrt_df2$Treat
 ```
 
@@ -448,7 +471,7 @@ summary(did_lm)
 ```
 
 ```{r}
-ggplot(data = deathQrt_df2, aes(x = quarter, y = UnemployRT, color = State.x)) + 
+ggplot(data = deathQrt_df2, aes(x = quarter, y = UnemployRT, color = State)) + 
   geom_line() +
   geom_vline(xintercept = as.Date("2014-01-01")) 
 
@@ -466,26 +489,27 @@ ggplot(data = deathQrt_df2, aes(x = quarter, y = Seas_Death, color = State)) +
 ```
 ## Seasonally adjust Yearly
 
+
 ```{r}
-# convert to quarterly
-deathYr_df2 <- deathMon_df2 %>%
-  group_by(State, Year = paste(
-                                  lubridate::year(deathMon_df2$date))) %>%
-  summarise(Deaths = sum(Deaths), Seas_Death = sum(Seas_Death), UnemployRT = mean(UnemployRT))
+deathYr_df2 <- deathMon_df2 %>% 
+  group_by(State = State, Year = year(date)) %>% 
+  summarise(Seas_Death = sum(Seas_Death))
 
-deathYr_df2$Year <- as.Date(deathYr_df2$Year, origin = 2009)
 
-deathYr_df2$Time <- ifelse(deathYr_df2$Year >= "2014-01-01", 1, 0) #before/after
-deathYr_df2$Treat <- ifelse(deathYr_df2$State == "Mississippi" , 0, 1)
-deathYr_df2$did <- deathYr_df2$Time * deathYr_df2$Treat
-
-str(deathYr_df2)
 ```
+
 
 ```{r}
 ggplot(data = deathYr_df2, aes(x = Year, y = Seas_Death, color = State)) + 
-  geom_line() +
-  scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
-  geom_vline(xintercept = 2014) 
+
+  geom_vline(xintercept = 2014) +
+
+   labs(title = "Seasonally Adjusted Death over Time",
+              subtitle = "Arkansas vs Mississippi") +
+  xlab("") + ylab("Deaths Count") +
+  scale_x_continuous(breaks = 2009:2019) +
+  geom_line()
 
 ```
+
+
